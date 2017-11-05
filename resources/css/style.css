@@ -1,0 +1,59 @@
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo {
+  display: inline-flex;
+  color: MediumAquamarine;
+}
+
+.logo p {
+  padding: 10px 10px;
+}
+
+nav {
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  padding: 15px;
+}
+
+a {
+  color: black;
+}
+
+/* News Content */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.large {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+.medium {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+.small {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px 20px;
+}
