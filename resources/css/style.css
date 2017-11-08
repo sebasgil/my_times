@@ -9,11 +9,14 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+
 }
 
 .logo {
   display: inline-flex;
   color: MediumAquamarine;
+  width: 1000px;
+  margin-bottom: 10px;
 }
 
 .logo p {
@@ -32,28 +35,168 @@ a {
   color: black;
 }
 
-/* News Content */
+/* General Styling */
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
-.large {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 20px 20px;
+.column {
+  display: flex;
 }
 
-.medium {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 20px 20px;
+.column .pic {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
 
-.small {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 20px 20px;
+.pic p {
+  margin: 0;
+  text-align: center;
+}
+
+.pic .mother {
+  text-align: left;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/* Left column */
+
+#phish {
+  background-image: url("img-story-main.png");
+  font-size: 40px;
+  /* specify as minimum height the height of the image */
+  /* there must be a better way, but this is the best I can think of now */
+  min-height: 300px;
+}
+
+#spin {
+  background-image: url("img-story-2.png");
+  min-height: 300px;
+  max-width: 299px;
+
+}
+
+#camera {
+  background-image: url("img-story-3.png");
+  min-height: 300px;
+  max-width: 299px;
+}
+.column .large {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 630px;
+}
+
+.column .large .stories {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.column .large .left-stories {
+  display: flex;
+  flex-direction: column;
+  /*this is a temporary fix for an even bigger stretch issue */
+  border: 1px dashed white;
+}
+
+.column .large .right-stories {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center Column */
+
+#cats {
+  background-image: url("img-story-1.png");
+  min-height: 300px;
+  max-width: 299px;
+}
+
+.column .medium {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 300px;
+}
+
+/* Right Column */
+.column .small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 30px;
+  width: 240px;
+}
+
+.column .small h2 {
+  padding: 20px 0px;
+  margin: 0;
+  width: 240px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.column .small ul {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 5px;
+  width: 240px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+.column .small li {
+  padding: 10px 20px;
+  list-style: none;
+  border-bottom: 1px solid black;
+}
+
+/* Footer */
+
+footer {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer .times {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+footer ul {
+  border-left: 2px solid white;
+}
+
+.footer-top {
+  display: inline-flex;
 }
