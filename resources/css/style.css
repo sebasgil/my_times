@@ -1,7 +1,14 @@
 
 /* Header */
 
+
 header {
+  /* make sure header sticks out */
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  border: 1px dashed red;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -12,12 +19,20 @@ header {
 
 }
 
+body {
+  border: 1px dashed green;
+
+}
+
 .logo {
   display: inline-flex;
+  justify-content: flex-start;
   color: MediumAquamarine;
   width: 1000px;
-  margin-bottom: 10px;
+  padding: 5px 0px;
 }
+
+
 
 .logo p {
   padding: 10px 10px;
@@ -38,6 +53,8 @@ a {
 /* General Styling */
 
 .container {
+  position: relative;
+  top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
