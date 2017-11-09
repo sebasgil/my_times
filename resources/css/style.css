@@ -7,7 +7,6 @@ header {
   position: fixed;
   z-index: 10;
   background-color: white;
-  border: 1px dashed red;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -16,12 +15,12 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  margin: 0px;
 
 }
 
 body {
-  border: 1px dashed green;
-
+  margin-top: 0px;
 }
 
 .logo {
@@ -53,6 +52,7 @@ a {
 /* General Styling */
 
 .container {
+  margin-top: 0px;
   position: relative;
   top: 50px;
   display: flex;
